@@ -15,6 +15,31 @@
 		654CCE6E1C1C830D007926EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654CCE6C1C1C830D007926EF /* LaunchScreen.storyboard */; };
 		654CCE791C1C830D007926EF /* sleden2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCE781C1C830D007926EF /* sleden2Tests.swift */; };
 		654CCE841C1C830D007926EF /* sleden2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCE831C1C830D007926EF /* sleden2UITests.swift */; };
+		654CCE941C1C8324007926EF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE911C1C8324007926EF /* Bolts.framework */; };
+		654CCE951C1C8324007926EF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE921C1C8324007926EF /* Parse.framework */; };
+		654CCE961C1C8324007926EF /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE931C1C8324007926EF /* ParseUI.framework */; };
+		654CCE981C1C832F007926EF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE971C1C832F007926EF /* Social.framework */; };
+		654CCE9A1C1C8337007926EF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE991C1C8337007926EF /* Accounts.framework */; };
+		654CCE9C1C1C8340007926EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE9B1C1C8340007926EF /* CoreGraphics.framework */; };
+		654CCE9E1C1C8347007926EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE9D1C1C8347007926EF /* CoreLocation.framework */; };
+		654CCEA01C1C8353007926EF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCE9F1C1C8353007926EF /* CFNetwork.framework */; };
+		654CCEA21C1C835E007926EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEA11C1C835E007926EF /* SystemConfiguration.framework */; };
+		654CCEA41C1C8365007926EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEA31C1C8365007926EF /* libsqlite3.tbd */; };
+		654CCEA61C1C836B007926EF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEA51C1C836B007926EF /* libz.tbd */; };
+		654CCEA81C1C8373007926EF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEA71C1C8373007926EF /* MobileCoreServices.framework */; };
+		654CCEAA1C1C837A007926EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEA91C1C837A007926EF /* QuartzCore.framework */; };
+		654CCEAC1C1C8381007926EF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEAB1C1C8381007926EF /* Security.framework */; };
+		654CCEAE1C1C838A007926EF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEAD1C1C838A007926EF /* StoreKit.framework */; };
+		654CCEB01C1C839D007926EF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654CCEAF1C1C839D007926EF /* AudioToolbox.framework */; };
+		654CCEB31C1C8819007926EF /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEB21C1C8819007926EF /* signInViewController.swift */; };
+		654CCEB51C1C9F7F007926EF /* myFrindsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEB41C1C9F7F007926EF /* myFrindsViewController.swift */; };
+		654CCEB71C1C9F90007926EF /* findFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEB61C1C9F90007926EF /* findFriendsViewController.swift */; };
+		654CCEB91C1C9FEA007926EF /* sledenMenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEB81C1C9FEA007926EF /* sledenMenyViewController.swift */; };
+		654CCEBB1C1CB052007926EF /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEBA1C1CB052007926EF /* tableViewCell.swift */; };
+		654CCEBD1C1D5800007926EF /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEBC1C1D5800007926EF /* user.swift */; };
+		65C679C21C22CFE000619A4E /* sledenTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C679C11C22CFE000619A4E /* sledenTypeEnum.swift */; };
+		65C679C41C22D09500619A4E /* SendSleden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C679C31C22D09500619A4E /* SendSleden.swift */; };
+		65EC9DD21C202C4600C41A48 /* sledenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC9DD11C202C4600C41A48 /* sledenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +74,31 @@
 		654CCE7F1C1C830D007926EF /* sleden2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sleden2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		654CCE831C1C830D007926EF /* sleden2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleden2UITests.swift; sourceTree = "<group>"; };
 		654CCE851C1C830D007926EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654CCE911C1C8324007926EF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		654CCE921C1C8324007926EF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		654CCE931C1C8324007926EF /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		654CCE971C1C832F007926EF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		654CCE991C1C8337007926EF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		654CCE9B1C1C8340007926EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		654CCE9D1C1C8347007926EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		654CCE9F1C1C8353007926EF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		654CCEA11C1C835E007926EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		654CCEA31C1C8365007926EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		654CCEA51C1C836B007926EF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		654CCEA71C1C8373007926EF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		654CCEA91C1C837A007926EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		654CCEAB1C1C8381007926EF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		654CCEAD1C1C838A007926EF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		654CCEAF1C1C839D007926EF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		654CCEB21C1C8819007926EF /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		654CCEB41C1C9F7F007926EF /* myFrindsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myFrindsViewController.swift; sourceTree = "<group>"; };
+		654CCEB61C1C9F90007926EF /* findFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = findFriendsViewController.swift; sourceTree = "<group>"; };
+		654CCEB81C1C9FEA007926EF /* sledenMenyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sledenMenyViewController.swift; sourceTree = "<group>"; };
+		654CCEBA1C1CB052007926EF /* tableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tableViewCell.swift; path = ../tableViewCell.swift; sourceTree = "<group>"; };
+		654CCEBC1C1D5800007926EF /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = user.swift; path = ../user.swift; sourceTree = "<group>"; };
+		65C679C11C22CFE000619A4E /* sledenTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sledenTypeEnum.swift; sourceTree = "<group>"; };
+		65C679C31C22D09500619A4E /* SendSleden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSleden.swift; sourceTree = "<group>"; };
+		65EC9DD11C202C4600C41A48 /* sledenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sledenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +106,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654CCEB01C1C839D007926EF /* AudioToolbox.framework in Frameworks */,
+				654CCEAE1C1C838A007926EF /* StoreKit.framework in Frameworks */,
+				654CCEAC1C1C8381007926EF /* Security.framework in Frameworks */,
+				654CCEAA1C1C837A007926EF /* QuartzCore.framework in Frameworks */,
+				654CCEA81C1C8373007926EF /* MobileCoreServices.framework in Frameworks */,
+				654CCEA61C1C836B007926EF /* libz.tbd in Frameworks */,
+				654CCEA41C1C8365007926EF /* libsqlite3.tbd in Frameworks */,
+				654CCEA21C1C835E007926EF /* SystemConfiguration.framework in Frameworks */,
+				654CCEA01C1C8353007926EF /* CFNetwork.framework in Frameworks */,
+				654CCE9E1C1C8347007926EF /* CoreLocation.framework in Frameworks */,
+				654CCE9C1C1C8340007926EF /* CoreGraphics.framework in Frameworks */,
+				654CCE9A1C1C8337007926EF /* Accounts.framework in Frameworks */,
+				654CCE981C1C832F007926EF /* Social.framework in Frameworks */,
+				654CCE961C1C8324007926EF /* ParseUI.framework in Frameworks */,
+				654CCE951C1C8324007926EF /* Parse.framework in Frameworks */,
+				654CCE941C1C8324007926EF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +145,7 @@
 		654CCE541C1C830D007926EF = {
 			isa = PBXGroup;
 			children = (
+				654CCEB11C1C83AE007926EF /* Frameworks */,
 				654CCE5F1C1C830D007926EF /* sleden2 */,
 				654CCE771C1C830D007926EF /* sleden2Tests */,
 				654CCE821C1C830D007926EF /* sleden2UITests */,
@@ -100,7 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				654CCE601C1C830D007926EF /* AppDelegate.swift */,
-				654CCE621C1C830D007926EF /* ViewController.swift */,
+				65C679BE1C22C17F00619A4E /* LogIn */,
+				65C679BD1C22C16400619A4E /* ViewControllers */,
+				65C679C01C22C1C800619A4E /* Modules */,
 				654CCE641C1C830D007926EF /* Main.storyboard */,
 				654CCE6A1C1C830D007926EF /* Assets.xcassets */,
 				654CCE6C1C1C830D007926EF /* LaunchScreen.storyboard */,
@@ -126,6 +195,76 @@
 				654CCE851C1C830D007926EF /* Info.plist */,
 			);
 			path = sleden2UITests;
+			sourceTree = "<group>";
+		};
+		654CCEB11C1C83AE007926EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654CCEAF1C1C839D007926EF /* AudioToolbox.framework */,
+				654CCEAD1C1C838A007926EF /* StoreKit.framework */,
+				654CCEAB1C1C8381007926EF /* Security.framework */,
+				654CCEA91C1C837A007926EF /* QuartzCore.framework */,
+				654CCEA71C1C8373007926EF /* MobileCoreServices.framework */,
+				654CCEA51C1C836B007926EF /* libz.tbd */,
+				654CCEA31C1C8365007926EF /* libsqlite3.tbd */,
+				654CCEA11C1C835E007926EF /* SystemConfiguration.framework */,
+				654CCE9F1C1C8353007926EF /* CFNetwork.framework */,
+				654CCE9D1C1C8347007926EF /* CoreLocation.framework */,
+				654CCE9B1C1C8340007926EF /* CoreGraphics.framework */,
+				654CCE991C1C8337007926EF /* Accounts.framework */,
+				654CCE971C1C832F007926EF /* Social.framework */,
+				654CCE911C1C8324007926EF /* Bolts.framework */,
+				654CCE921C1C8324007926EF /* Parse.framework */,
+				654CCE931C1C8324007926EF /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65C679BD1C22C16400619A4E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				654CCEB81C1C9FEA007926EF /* sledenMenyViewController.swift */,
+				65EC9DD11C202C4600C41A48 /* sledenView.swift */,
+				654CCEBA1C1CB052007926EF /* tableViewCell.swift */,
+				65C679BF1C22C19500619A4E /* FriendsViewControllers */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65C679BE1C22C17F00619A4E /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				654CCE621C1C830D007926EF /* ViewController.swift */,
+				654CCEB21C1C8819007926EF /* signInViewController.swift */,
+			);
+			name = LogIn;
+			sourceTree = "<group>";
+		};
+		65C679BF1C22C19500619A4E /* FriendsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				654CCEB41C1C9F7F007926EF /* myFrindsViewController.swift */,
+				654CCEB61C1C9F90007926EF /* findFriendsViewController.swift */,
+			);
+			name = FriendsViewControllers;
+			sourceTree = "<group>";
+		};
+		65C679C01C22C1C800619A4E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				65C679C51C22D0BF00619A4E /* Enums */,
+				654CCEBC1C1D5800007926EF /* user.swift */,
+				65C679C31C22D09500619A4E /* SendSleden.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		65C679C51C22D0BF00619A4E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				65C679C11C22CFE000619A4E /* sledenTypeEnum.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +401,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C679C41C22D09500619A4E /* SendSleden.swift in Sources */,
+				654CCEB51C1C9F7F007926EF /* myFrindsViewController.swift in Sources */,
+				654CCEBB1C1CB052007926EF /* tableViewCell.swift in Sources */,
+				654CCEB31C1C8819007926EF /* signInViewController.swift in Sources */,
 				654CCE631C1C830D007926EF /* ViewController.swift in Sources */,
+				654CCEB91C1C9FEA007926EF /* sledenMenyViewController.swift in Sources */,
+				654CCEBD1C1D5800007926EF /* user.swift in Sources */,
 				654CCE691C1C830D007926EF /* sleden2.xcdatamodeld in Sources */,
+				65EC9DD21C202C4600C41A48 /* sledenView.swift in Sources */,
+				65C679C21C22CFE000619A4E /* sledenTypeEnum.swift in Sources */,
 				654CCE611C1C830D007926EF /* AppDelegate.swift in Sources */,
+				654CCEB71C1C9F90007926EF /* findFriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +554,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sleden2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uib.student.dal001.sleden2;
@@ -417,6 +569,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sleden2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uib.student.dal001.sleden2;
@@ -491,6 +647,7 @@
 				654CCE8A1C1C830D007926EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		654CCE8B1C1C830D007926EF /* Build configuration list for PBXNativeTarget "sleden2Tests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +656,7 @@
 				654CCE8D1C1C830D007926EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		654CCE8E1C1C830D007926EF /* Build configuration list for PBXNativeTarget "sleden2UITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +665,7 @@
 				654CCE901C1C830D007926EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
