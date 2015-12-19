@@ -35,17 +35,17 @@ class FindFriends {
     
     var usersIsFriendsTable: NSMutableArray {
         
-        let usernames = NSMutableArray()
+        let isFriends = NSMutableArray()
         for user in users {
             if let username = user.username{
                 if username != PFUser.currentUser()?.username {
-                    usernames.addObject(username)
+                    isFriends.addObject(user.isFriend.rawValue)
                     print("henter brukernavn")
                 }
             }
         }
         
-        return usernames
+        return isFriends
         
     }
 

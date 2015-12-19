@@ -55,7 +55,7 @@ class findFriendsViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.findFriendsTable.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! tableViewCell
-        cell.titleLabel.text = "\(self.users.usersTable.objectAtIndex(indexPath.row) as? String) (\(self.users.usersTable.objectAtIndex(indexPath.row))"
+        cell.titleLabel.text = "\((self.users.usersTable.objectAtIndex(indexPath.row) as? String)!) (\(self.users.usersIsFriendsTable.objectAtIndex(indexPath.row)))"
         cell.addButton.tag = indexPath.row
         
         return cell
