@@ -7,96 +7,49 @@
 //
 
 import UIKit
-import Parse
 
 
 class myFrindsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-    
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
+
     @IBOutlet weak var friendsTable: UITableView!
     
-    var myFriends: NSMutableArray! = NSMutableArray()
+    //var myFriends: NSMutableArray! = NSMutableArray()
+    var getFriends: GetFriends = GetFriends()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Oppretter Activity Indicator (Den som spinne i midten)
+        self.actInd.center = self.view.center
+        self.actInd.hidesWhenStopped = true
+        self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        view.addSubview(self.actInd)
         
-        findFriends()
+        // Henter alle som er venner og plasserer de i getFriends objectet
+        getFriends.findFriends(self.friendsTable, actInt: self.actInd)
         
         self.friendsTable.reloadData()
         
-        
     }
-    
-    enum userRelation {
-        case Friend, SendtFriendRequest, RecivedFriendRequest, notFriends
-        
-        // Muligheter for funksjoner
-        func acceptFriendRequest() {
-            print("Friend request accepted")
-        }
-        
-        func declineFriendRequest() {
-            print("Friend request declined")
-        }
-    }
-    
-    
-    
-    private func findFriends() {
-        
-        // Make call to user tabel i database and fetch friends
-        let queryFriends = PFQuery(className: "Friends")
-        print("Hher3")
-        queryFriends.whereKey("user1", equalTo: (PFUser.currentUser()?.objectId)!)
-        queryFriends.findObjectsInBackgroundWithBlock({ (objects: [PFObject]?, error: NSError?) -> Void in
-            print("Hher2")
-            if error == nil {
-                for object in objects! {
-                    print("Hher1")
-                    if (object["user1"] as? String == PFUser.currentUser()?.objectId){
-                        self.myFriends.addObject(object["user2"] as! String)
-                        print(2)
-                    } else {
-                        self.myFriends.addObject(object["user1"] as! String)
-                        print(1)
-                    }
-                    
-                }
-                
-            } else {
-                print(error)
-            }
-            self.friendsTable.reloadData()
-            
-            
-        })
-       
 
         
-    }
-    
-    
-    
-    
     
     // MARK - table view
     
+    // Legger til antall rader som skal være i tabellen når den oppdateres
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.myFriends.count
+        return getFriends.myFriends.count
     }
     
+    // Legger til de forskjellige cellene i tabellen
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell: tableViewCell = self.friendsTable.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! tableViewCell
-        
-        cell.titleLabel.text = self.myFriends.objectAtIndex(indexPath.row) as? String
+        cell.titleLabel.text = self.getFriends.myFriendsTable.objectAtIndex(indexPath.row) as? String
         cell.addButton.tag = indexPath.row
-            
-        
-        print("Cell!")
         return cell
         
     }
