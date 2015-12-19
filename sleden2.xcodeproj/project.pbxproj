@@ -36,7 +36,8 @@
 		654CCEB71C1C9F90007926EF /* findFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEB61C1C9F90007926EF /* findFriendsViewController.swift */; };
 		654CCEB91C1C9FEA007926EF /* sledenMenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEB81C1C9FEA007926EF /* sledenMenyViewController.swift */; };
 		654CCEBB1C1CB052007926EF /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEBA1C1CB052007926EF /* tableViewCell.swift */; };
-		654CCEBD1C1D5800007926EF /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CCEBC1C1D5800007926EF /* user.swift */; };
+		657C3C661C25E3B400D3559F /* GetFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C3C651C25E3B400D3559F /* GetFriends.swift */; };
+		657C3C681C25E4D300D3559F /* userRelationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C3C671C25E4D300D3559F /* userRelationEnum.swift */; };
 		65C679C21C22CFE000619A4E /* sledenTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C679C11C22CFE000619A4E /* sledenTypeEnum.swift */; };
 		65C679C41C22D09500619A4E /* SendSleden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C679C31C22D09500619A4E /* SendSleden.swift */; };
 		65EC9DD21C202C4600C41A48 /* sledenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC9DD11C202C4600C41A48 /* sledenView.swift */; };
@@ -95,7 +96,8 @@
 		654CCEB61C1C9F90007926EF /* findFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = findFriendsViewController.swift; sourceTree = "<group>"; };
 		654CCEB81C1C9FEA007926EF /* sledenMenyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sledenMenyViewController.swift; sourceTree = "<group>"; };
 		654CCEBA1C1CB052007926EF /* tableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tableViewCell.swift; path = ../tableViewCell.swift; sourceTree = "<group>"; };
-		654CCEBC1C1D5800007926EF /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = user.swift; path = ../user.swift; sourceTree = "<group>"; };
+		657C3C651C25E3B400D3559F /* GetFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFriends.swift; sourceTree = "<group>"; };
+		657C3C671C25E4D300D3559F /* userRelationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userRelationEnum.swift; sourceTree = "<group>"; };
 		65C679C11C22CFE000619A4E /* sledenTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sledenTypeEnum.swift; sourceTree = "<group>"; };
 		65C679C31C22D09500619A4E /* SendSleden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSleden.swift; sourceTree = "<group>"; };
 		65EC9DD11C202C4600C41A48 /* sledenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sledenView.swift; sourceTree = "<group>"; };
@@ -253,8 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				65C679C51C22D0BF00619A4E /* Enums */,
-				654CCEBC1C1D5800007926EF /* user.swift */,
 				65C679C31C22D09500619A4E /* SendSleden.swift */,
+				657C3C651C25E3B400D3559F /* GetFriends.swift */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				65C679C11C22CFE000619A4E /* sledenTypeEnum.swift */,
+				657C3C671C25E4D300D3559F /* userRelationEnum.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -407,11 +410,12 @@
 				654CCEB31C1C8819007926EF /* signInViewController.swift in Sources */,
 				654CCE631C1C830D007926EF /* ViewController.swift in Sources */,
 				654CCEB91C1C9FEA007926EF /* sledenMenyViewController.swift in Sources */,
-				654CCEBD1C1D5800007926EF /* user.swift in Sources */,
+				657C3C681C25E4D300D3559F /* userRelationEnum.swift in Sources */,
 				654CCE691C1C830D007926EF /* sleden2.xcdatamodeld in Sources */,
 				65EC9DD21C202C4600C41A48 /* sledenView.swift in Sources */,
 				65C679C21C22CFE000619A4E /* sledenTypeEnum.swift in Sources */,
 				654CCE611C1C830D007926EF /* AppDelegate.swift in Sources */,
+				657C3C661C25E3B400D3559F /* GetFriends.swift in Sources */,
 				654CCEB71C1C9F90007926EF /* findFriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
