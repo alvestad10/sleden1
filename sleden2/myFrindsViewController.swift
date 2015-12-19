@@ -22,29 +22,31 @@ class myFrindsViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getFriends.findFriends()
+        self.getFriends.findFriends(self)
         
         self.friendsTable.reloadData()
         
         
     }
     
+    func updateTableFromModule() {
+        self.friendsTable.reloadData()
+    }
         
     
     // MARK - table view
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.myFriends.count
+        return self.getFriends.myFriendsTable.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell: tableViewCell = self.friendsTable.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! tableViewCell
         
-        cell.titleLabel.text = self.myFriends.objectAtIndex(indexPath.row) as? String
+        cell.titleLabel.text = self.getFriends.myFriendsTable.objectAtIndex(indexPath.row) as? String
         cell.addButton.tag = indexPath.row
-            
         
         print("Cell!")
         return cell
