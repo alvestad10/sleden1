@@ -11,11 +11,14 @@ import Parse
 
 class findFriendsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
     @IBOutlet weak var searchField: UITextField!
     
-    
     @IBOutlet weak var findFriendsTable: UITableView!
+    
+    var users: FindFriends = FindFriends()
+    
     
     
     var searchResult: NSMutableArray!  = NSMutableArray()
@@ -23,9 +26,20 @@ class findFriendsViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.searchResult.addObject("Navn1")
-        self.searchResult.addObject("Navn2")
-        self.searchResult.addObject("Navn3")
+        // Oppretter Activity Indicator (Den som spinne i midten)
+        self.actInd.center = self.view.center
+        self.actInd.hidesWhenStopped = true
+        self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        view.addSubview(self.actInd)
+        
+        
+        let barViewController = self.tabBarController?.viewControllers
+        let myFriendsView = barViewController![0] as! myFrindsViewController
+        self.users.myFriends = myFriendsView.getFriends.myFriends
+        
+        
+        // Henter alle som er venner og plasserer de i getFriends objectet
+        users.allUsernames(self.findFriendsTable, acnInt: self.actInd)
         
         self.findFriendsTable.reloadData()
         
@@ -35,71 +49,21 @@ class findFriendsViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return self.searchResult.count
+        return self.users.usersTable.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.findFriendsTable.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! tableViewCell
-        
-        cell.titleLabel.text = self.searchResult.objectAtIndex(indexPath.row) as? String
-        
+        cell.titleLabel.text = "\(self.users.usersTable.objectAtIndex(indexPath.row) as? String) (\(self.users.usersTable.objectAtIndex(indexPath.row))"
         cell.addButton.tag = indexPath.row
-        
-        cell.addButton.addTarget(self, action: "addAction", forControlEvents: .TouchUpInside)
-        
         
         return cell
     }
-    
-    
-    @IBAction func addAction(sender: UIButton){
-        
-        
-        let titleString = self.searchResult.objectAtIndex(sender.tag) as? String
-        
-        let firstActivityItem = "\(titleString)"
-        
-        let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
-        
-        
-        self.presentViewController(activityViewController, animated: true, completion: nil)
-        
-    }
-    
-    func isFriend(myuser: PFUser, user2: User) -> Bool{
-        
-        
-        let queryFriends = PFQuery(className: "Friends")
-        
-        var isFriend = false
-        
-        queryFriends.whereKey("user1", equalTo: myuser.objectId!)
-        queryFriends.findObjectsInBackgroundWithBlock({ (objects: [PFObject]?, error: NSError?) -> Void in
-            
-            if error == nil {
-                
-                for object in objects! {
-                    
-                    let user1ID = object["user2"] as! String
-                    
-                    if (user1ID == user2.userID){
-                        isFriend = true
-                    }
-                    
-                }
-                
-            } else {
-                print(error)
-            }
-        
-        })
-        
-        return isFriend
 
-        
-    }
+    
+    
+    
     
     
     
